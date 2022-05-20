@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <FONT face="Verdana">
+    <title>Musée du Louvre</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Formulaire : Achat billet au Musée du Louvre</h1>
+    <form action="1traitement.php" method="post">
+        <table>
+            <tr>
+                <td>Numéro du client:</td>
+                <td><input type="text" name="num" size="30"> </td>
+            </tr>
+            <tr>
+                <td>Nom du client:</td>
+                <td><input type="text" name="nom" size="30"> </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="text" name="age" min="0" max="120" size="30"> </td>
+            </tr>
+            
+            <tr>
+            <td colspan="2" align="center"> <br /> 
+                    <input type="radio" id="Enfant" name="Enfant" value="Enfant">
+                    <label for="Enfant">Enfant</label> </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="radio" id="Etudiant" name="Etudiant" value="Etudiant">
+                    <label for="Etudiant">Etudiant</label> </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="left"> Statut du client </td>
+                <td colspan="2" align="left"> <input type="radio" id="Employé" name="Employé" value="Employé">
+                    <label for="Employé">Employé</label> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"> <br /> 
+                    <input type="radio" id="Senior" name="Senior" value="Senior">
+                    <label for="Senior">Senior</label> </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="radio" id="Pasdetravail" name="Pasdetravail" value="Pasdetravail">
+                    <label for="Pasdetravail">Pas de travail</label> </td>
+            </tr>
+        
+            <tr>
+                <td colspan="2" align="center"> <br/>
+                    <input type="submit" name="button" value="Soumettre">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p1> <br/> <br/> Le prix d'entrée de 15€ sans rabais.</p1>
+</body>
+
+</html>
